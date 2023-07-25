@@ -152,29 +152,3 @@ const menuList = (menuItems) => {
 menuList(menu);
 categoryList();
 
-
-
-// const menuItemsContainer = document.getElementById("menu");
-
-// function createMenuItem(item) {
-//   return `
-//     <div class="col-lg-6 col-sm-12 menu-items">
-//       <img class="photo" src="${item.img}" alt="${item.title}" />
-//       <div class="menu-info">
-//         <div class="menu-title">
-//           <h4>${item.title}</h4>
-//           <h4 class="price">${item.price}</h4>
-//           </div>
-          
-//         <p class="menu-text">${item.desc}</p>
-//       </div>
-//     </div>
-//   `;
-// }
-
-// function displayMenuItems() {
-//   const menuItemsHTML = menu.map(createMenuItem).join("");
-//   menuItemsContainer.innerHTML = menuItemsHTML;
-// }
-
-// displayMenuItems();
