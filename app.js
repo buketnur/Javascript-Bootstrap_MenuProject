@@ -85,6 +85,7 @@ const menu = [
 const section = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
+//categories dizisi, menüdeki farklı kategorileri içeren bir dizi haline getirildi
 const categories = menu.reduce(
   (values, item) => {
     if (!values.includes(item.category)) {
@@ -97,8 +98,7 @@ const categories = menu.reduce(
 );
 
 const categoryList = () => {
-  const categoryBtns = categories
-    .map((category) => {
+  const categoryBtns = categories.map((category) => {
       return `<button class="btn btn-outline-dark btn-item" data-id=${category}>${category}</button>`;
     })
     .join("");
